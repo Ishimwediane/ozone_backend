@@ -20,7 +20,7 @@ const allowedOrigins = [
   'http://localhost:3000', // Alternative dev port
   'http://127.0.0.1:5173', // Alternative localhost
   'http://127.0.0.1:3000', // Alternative localhost
-  'https://ozone-i1t6.vercel.app/', // Deployed Vercel frontend
+  'https://ozone-i1t6.vercel.app', // Deployed Vercel frontend
   process.env.FRONTEND_URL, // Custom frontend URL from env
   process.env.FRONTEND_DEPLOY_URL, // Production frontend URL
 ].filter(Boolean); // Remove undefined values
