@@ -20,7 +20,7 @@ const allowedOrigins = [
   'http://localhost:3000', // Alternative dev port
   'http://127.0.0.1:5173', // Alternative localhost
   'http://127.0.0.1:3000', // Alternative localhost
-  'https://portfolio-ten-umber-leahd6zxga.vercel.app', // Deployed Vercel frontend
+  'https://ozone-i1t6.vercel.app/', // Deployed Vercel frontend
   process.env.FRONTEND_URL, // Custom frontend URL from env
   process.env.FRONTEND_DEPLOY_URL, // Production frontend URL
 ].filter(Boolean); // Remove undefined values
@@ -45,7 +45,7 @@ app.use(cors({
 
 // Rate limiting
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
+  windowMs: 5 * 60 * 1000, // 15 minutes
   max: 5, // limit each IP to 5 requests per windowMs for email endpoint
   message: 'Too many email requests from this IP, please try again later.'
 });
